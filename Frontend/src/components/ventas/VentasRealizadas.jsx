@@ -69,8 +69,8 @@ const rol = localStorage.getItem('rol')
                        </tr>
                      </thead>
                      <tbody className="text-gray-700" id="tabla-ventas-body">
-                     {  ventas.map((v)=>(
-                       <tr key={v._id} className="border-t">
+                     {  ventas.map((v,index)=>(
+                       <tr key={index} className="border-t">
                          <td className="py-2 text-center">{v.cliente.nombre}</td>
                          <td className="py-2 text-center">{convertirFecha(v.fecha)}</td>
                          <td className="py-2 text-center">{v.total.toFixed(2)}</td>

@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react"
 
 
-const url_api = 'http://localhost:3000/api/ventas/'
+const url_api = `${import.meta.env.VITE_URL_API}ventas/`
 
 const VentasContext = createContext();
 

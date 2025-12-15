@@ -30,8 +30,8 @@ const TablaVentas = () => {
                   <tbody className="text-gray-700">
                    
                    {
-                      ultimasVentas.map((v)=>(
-                    <tr key={ventas._id} className="border-t">
+                      ultimasVentas.map((v,index)=>(
+                    <tr key={index} className="border-t">
                       <td className="py-2">{v.cliente.nombre}</td>
                       <td className="py-2">{v.total.toFixed(2)}</td>
                     </tr>

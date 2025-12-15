@@ -4,6 +4,7 @@ import { useLoginRegister } from '../../context/LoginRegisterContext'
 
 const Sidebar = ({sidebarOpen}) => {
   const {user} = useLoginRegister();
+  const rol = localStorage.getItem('rol');
 
   return (
     <aside
@@ -22,7 +23,7 @@ const Sidebar = ({sidebarOpen}) => {
             <Link to='/productos' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Productos</Link>
             <Link to='/clientes' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Clientes</Link>
             {
-              user?.role?.name ==='admin' && (
+              rol === 'admin' && (
               <Link to='/configuracion' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Configuración</Link>
               )
           }

@@ -1,6 +1,6 @@
 import { createContext, useState, useContext,  } from "react"
 
-const url_api='http://localhost:3000/api/auth/login'
+const url_api=`${import.meta.env.VITE_URL_API}auth/login`
 
 const url_api_register = 'http://localhost:3000/api/auth/register'
 
