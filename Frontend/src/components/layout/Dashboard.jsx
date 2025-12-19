@@ -15,6 +15,7 @@ export default function Dashboard() {
 
   
   return (
+    <>
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header */}
       <Header setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen} />
@@ -41,5 +42,6 @@ export default function Dashboard() {
 
       <Footer />
     </div>
+    </>
   );
 }

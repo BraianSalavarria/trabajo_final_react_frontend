@@ -7,8 +7,8 @@ const Resumen = () => {
   return (
     <div>
         <EstadisticaGral />
-        <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6"> 
-            <ActividadReciente />
+        <div className="mt-4"> 
+            
             <TablaVentas /> 
         </div>
     </div>

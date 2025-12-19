@@ -13,12 +13,12 @@ const Sidebar = ({sidebarOpen}) => {
   ${sidebarOpen ? "block" : "hidden md:block"}`}
         >
           <div className="mb-6">
-            <h2 className="text-white text-xl font-bold">Crustyfy Panel</h2>
+            <h2 className="text-white text-xl font-bold">Crustify Panel</h2>
             <div className="h-1 w-12 bg-blue-500 rounded-full mt-2"></div>
           </div>
           
           <nav className="space-y-2 text-sm">
-            <Link to='/' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Resumen - Home</Link>
+            <Link to='/' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Resumen </Link>
             <Link to='/ventas' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Ventas</Link>
             <Link to='/productos' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Productos</Link>
             <Link to='/clientes' className="block p-3 rounded-xl text-gray-300 hover:bg-slate-700 hover:text-white transition-all duration-200 font-medium">Clientes</Link>
