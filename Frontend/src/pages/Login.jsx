@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useLoginRegister } from '../context/LoginRegisterContext'
 import { useNavigate } from 'react-router-dom'
+import bgvideo from '../../public/background/background.mp4'
 
 function Login() {
   const { login } = useLoginRegister()
@@ -36,7 +37,7 @@ function Login() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="../../public/background/background.mp4" type="video/mp4" />
+        <source src={bgvideo} type="video/mp4" />
       </video>
 
       {/* 🌑 Overlay oscuro */}
