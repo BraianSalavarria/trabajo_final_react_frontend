@@ -29,7 +29,7 @@ function Login() {
   return (
     <div className="relative min-h-screen overflow-hidden">
 
-      {/* 🎥 Video de fondo */}
+      {/* Video de fondo */}
       <video
         autoPlay
         loop
@@ -41,23 +41,24 @@ function Login() {
       </video>
 
       {/* 🌑 Overlay oscuro */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/35" />
 
       {/* 📦 Contenido */}
       <div className="relative z-10 min-h-screen flex items-center justify-end px-6 md:px-20">
 
-        <form
-  onSubmit={handleSubmit}
-  className="
-    w-full max-w-md
-    rounded-3xl
-    bg-white/10
-    backdrop-blur-xl
-    border border-white/20
-    p-8
-    shadow-2xl
-  "
+   <form
+        onSubmit={handleSubmit}
+        className="
+          w-full max-w-md
+          rounded-3xl
+          bg-white/10
+          backdrop-blur-xl
+          border border-white/20
+          p-8
+          shadow-2xl
+        "
 >
+  <fieldset>
   {/* Header */}
   <div className="mb-8 text-center">
     <h2 className="text-3xl font-bold text-white">
@@ -79,13 +80,13 @@ function Login() {
 
   {/* Email */}
   <div className="relative mb-6">
+    <legend className='text-sm text-white/60 mb-2'>Email</legend>
     <input
       type="email"
       value={email}
       onChange={(e) => setEmail(e.target.value)}
-      placeholder=" "
       className="
-        peer
+        peer-
         w-full
         rounded-xl
         bg-white/10
@@ -98,26 +99,13 @@ function Login() {
         focus:ring-blue-500
       "
     />
-    <label
-      className="
-        absolute left-4 top-3
-        text-sm text-white/60
-        transition-all
-        peer-placeholder-shown:top-3
-        peer-placeholder-shown:text-base
-        peer-placeholder-shown:text-white/40
-        peer-focus:-top-2
-        peer-focus:text-xs
-        peer-focus:text-blue-400
-        bg-transparent
-      "
-    >
-      Email
-    </label>
+    
+    
   </div>
 
   {/* Password */}
   <div className="relative mb-8">
+    <legend className='text-sm text-white/60 mb-2'>Contraseña</legend>
     <input
       type="password"
       value={password}
@@ -136,22 +124,10 @@ function Login() {
         focus:ring-2
         focus:ring-blue-500
       "
-    />
-    <label
-      className="
-        absolute left-4 top-3
-        text-sm text-white/60
-        transition-all
-        peer-placeholder-shown:top-3
-        peer-placeholder-shown:text-base
-        peer-placeholder-shown:text-white/40
-        peer-focus:-top-2
-        peer-focus:text-xs
-        peer-focus:text-blue-400
-      "
-    >
-      Contraseña
-    </label>
+    /> 
+
+    
+  
   </div>
 
   {/* Button */}
@@ -179,6 +155,7 @@ function Login() {
     © 2025 · Todos lo derechos reservados · Crustify
 
   </p>
+  </fieldset>
 </form>
 
 
